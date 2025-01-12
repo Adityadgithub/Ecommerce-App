@@ -3,7 +3,7 @@ import 'package:carousel_slider/carousel_slider.dart';
 import 'package:http/http.dart' as http;
 import 'package:flutter/material.dart';
 import 'package:shimmer/shimmer.dart';
-
+import 'package:flutter/src/material/carousel.dart' as csx;
 import 'categorymodel.dart';
 
 class Home extends StatefulWidget {
@@ -173,7 +173,7 @@ class _HomeState extends State<Home> {
 
   @override
   Widget build(BuildContext context) {
-    CarouselController carouselController = CarouselController();
+    csx.CarouselController  carouselController = csx.CarouselController();
     return WillPopScope(
       onWillPop: _onWillPop,
       child: SingleChildScrollView(
